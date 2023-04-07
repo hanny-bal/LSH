@@ -1,8 +1,8 @@
 import xxhash
 from typing import Callable
 
-def hash_family_str_to_4bytes(i: int) -> Callable[[str],int]:
-    """Instanciate a hash family that hashes a string to 4 bytes using seed i.
+def hash_str_to_4bytes(i: int) -> Callable[[str],int]:
+    """Instanciate a hash function that hashes a string to 4 bytes using seed i.
 
     Args:
         i (int): The seed of the hash family.

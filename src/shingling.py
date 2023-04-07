@@ -1,7 +1,7 @@
 from typing import Union
 
 from typing import Callable
-from src.hashing import hash_family_str_to_4bytes
+from src.hashing import hash_str_to_4bytes
 
 def get_shingles(document: str, k: int, compressed: bool = True) -> Union[set, None]:
     """Given an input string and the length of the shingles, the function produces
@@ -24,7 +24,7 @@ def get_shingles(document: str, k: int, compressed: bool = True) -> Union[set, N
         return None
     
     # get some hash function for compressing the shingles, we just use seed 0
-    h: Callable[[str],int] = hash_family_str_to_4bytes(i=0)
+    h: Callable[[str],int] = hash_str_to_4bytes(i=0)
 
     # produce the actual results
     shingle_set: set = set()

@@ -3,7 +3,7 @@ import xxhash
 
 from typing import Callable
 from src.shingling import get_shingles
-from src.hashing import hash_family_str_to_4bytes
+from src.hashing import hash_str_to_4bytes
 
 class TestShingling(unittest.TestCase):
     """Tests for shingling.
@@ -37,7 +37,7 @@ class TestShingling(unittest.TestCase):
         """Test hashing a string to 4 bytes. 
         """
         seed: int = 4
-        h: Callable[[str], int] = hash_family_str_to_4bytes(i=seed)
+        h: Callable[[str], int] = hash_str_to_4bytes(i=seed)
         
         # test if identical strings hash to the same value and different ones don't
         self.assertNotEqual(h('hello'), h('world'))

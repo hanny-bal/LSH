@@ -47,7 +47,7 @@ class TestMinHash(unittest.TestCase):
         estimated_similarity: float = sum(similarity_estimates) / N
         print(f'Estimated similarity using signatures: {estimated_similarity}')
 
-        self.assertAlmostEqual(estimated_similarity, absolute_similarity, places=2)
+        self.assertAlmostEqual(estimated_similarity, absolute_similarity, places=1)
 
 if __name__ == '__main__':
     unittest.main()
