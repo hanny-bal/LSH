@@ -7,6 +7,8 @@ In order to run the program, Python >= 3.9 is required together with the depende
 To test different aspects of the program, use
 ```bash
 python -m unittest tests.test_shingling
+python -m unittest tests.test_minhash
+python -m unittest tests.test_LSH
 ```
 
 ## Generate your own requirements file
