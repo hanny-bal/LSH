@@ -9,7 +9,6 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "xxhash",
-    "numpy",
     "pandas",
     "matplotlib",
     "tqdm"
