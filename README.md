@@ -7,7 +7,7 @@ The usage of the LSH implementation as well as a performance comparison of near-
 To run the unittests testing different aspects of the program, you can use the commands
 ```bash
 python -m unittest tests.test_shingling
-python -m unittest tests.test_minhash
+python -m unittest tests.test_minhash # run multiple times due to probabilistic nature
 python -m unittest tests.test_LSH
 ```
 
