@@ -15,7 +15,7 @@ python -m unittest tests.test_LSH
 The required dependencies are specified in the `requirements.txt`. You can install them by running `pip install -r requirements.txt`.
 
 ## Generate your own requirements file
-The projects uses [pip-tools](https://github.com/jazzband/pip-tools) to generate a requirements file based on the dependencies specified in `pyproject.toml`. To generate your own requirements file (e.g. for a different version of Python) install pip-tools and run
+The project uses [pip-tools](https://github.com/jazzband/pip-tools) to generate a requirements file based on the dependencies specified in `pyproject.toml`. To generate your own requirements file (e.g. for a different version of Python) install pip-tools and run
 ```bash
 pip-compile -o requirements.txt pyproject.toml
 ``` 
